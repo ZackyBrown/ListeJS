@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS LISTE DE COURSE</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body onload="afficher()">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Liste de courses</h1>
+
+        <form>
+
+          <p>
+            <label for="prod">produit :</label><br>
+            <input type="text" id="prod" size="20" placeholder="produit">
+          </p>
+          <p>
+            <label for="qte">quantité :</label><br>
+            <input type="text" id="qte" size="20" placeholder="quantitée">
+          </p>
+          <p>
+            <input type="button" value="Ajouter" class="btn btn-success" onclick="ajouter();">
+            <input type="button" value="Modifier" class="btn btn-warning" onclick="modifier();">
+            <input type="button" value="Supprimer" class="btn btn-danger" onclick="supprimer();">
+          </p>
+
+        </form>
+
+        <table align="center" id="paires">
+
+
+
+        </table>
+
+        <br>
+
+        <input type="button" value="clear" class="btn btn-primary" onclick="doClear();">
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- JS perso pour la page -->
+  <script src="js/local.js">
+
+  </script>
+
+</body>
+</html>
